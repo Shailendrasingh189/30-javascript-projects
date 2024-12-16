@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokemon Search App</title>
+  </head>
+  <body>
+    <main>
+      <h1>Pokemon Search App</h1>
+      <div class="container">
+        <div class="search-container">
+          <label for="search-input" class="input-label"
+            >Enter Pokemon Name or ID:
+          </label>
+          <div class="search-box">
+            <input class="search-input" id="search-input" type="text" required />
+            <button id="search-button" class="search-btn">Search</button>
+          </div>
+        </div>
+        <div class="pokemon type-normal">
+          <div class="pokemon-display">
+            <div class="pokemon-name-box">
+              <span id="pokemon-name">Charmeleon</span>
+              <span id="pokemon-id">#5</span>
+            </div>
+            <!-- <div class="img-container"> -->
+              <img id="sprite" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOFQcYtmR6sh2YpNa25zOZeGpWaeCgdT8pPw&s" alt="pokemon-image" />
+            <!-- </div> -->
+
+            <div class="pokemon-types" id="types">
+              <span class="type pokemon-type">Ram</span>
+            </div>
+          </div>
+          <div class="pokemon-info">
+            <div class="pokemon-size">
+              <div>Height : <span id="height">34</span></div>
+              <div>Weight : <span id="weight">23</span></div>
+            </div>
+            <table class="pokemon-stats">
+              <tbody>
+                <tr>
+                  <th>HP :</th>
+                  <td id="hp">34</td>
+                </tr>
+                <tr>
+                  <th>attack :</th>
+                  <td id="attack">23</td>
+                </tr>
+                <tr>
+                  <th>Defense :</th>
+                  <td id="defense">34</td>
+                </tr>
+                <tr>
+                  <th>Sp. Attack :</th>
+                  <td id="special-attack">34</td>
+                </tr>
+                <tr>
+                  <th>Sp. Defense :</th>
+                  <td id="special-defense">34</td>
+                </tr>
+                <tr>
+                  <th>Speed :</th>
+                  <td id="speed">35</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

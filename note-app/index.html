@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Notes App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="notes-head">
+            <h1><img src="images/notes.png" alt="notes icon"> Notes</h1>
+            <button id="create-btn"><img src="images/edit.png" alt="create-icon"> Create Notes</button>
+        </div>
+        <div class="notes-container">
+            <!-- <div class="input-box">
+                <h2 id="title-data">title <img src="images/edit.png" alt="edit" id="edit"></h2>
+                <p class="content">
+                    I do project daily
+                </p>
+                <img id="del" src="images/delete.png" alt="delete-icon">
+            </div> -->
+        </div>
+        <div class="add-form">
+            <div class="head">
+                <h1><img src="images/notes.png" alt="notes icon"> Notes</h1>
+                <button class="close">x</button>
+            </div>
+            <div class="form-area" >
+                <div class="inputs">
+                    <input type="text" placeholder="title" id="title">
+                </div>
+                <div class="inputs">
+                    <textarea name="description" id="description" rows="5" cols="20"
+                        placeholder="Start typing"></textarea>
+                </div>
+                <div class="updatesBtn">
+                    <!-- <button id="addBtn">Delete</button> -->
+                    <button id="addBtn">Add Note</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F9EBE0;
+}
+
+.product {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+    box-shadow:
+     -0.5px -0.5px 4px rgba(211, 211, 211, 1),
+      0.5px 0.5px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    
+}
+
+.gallery {
+    flex-basis: 47%;
+    background: #312f2f;
+    transform: scale(1.08);
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.gallery img {
+    padding-top: 105px;
+    width: 100%;
+    display: block;
+}
+
+.details {
+    flex-basis: 53%;
+    padding: 40px;
+    padding-left: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b4b4b;
+    background-color: #fff;
+
+}
+
+.details h1 {
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+
+.details h2 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: #8e8e8e;
+}
+
+.details h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #0088ff;
+}
+
+.details .description {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    float: left;
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    box-shadow:
+     -0.5px -0.5px 2px rgba(211, 211, 211, 1),
+      0.5px 0.5px 4px rgba(0, 0, 0, 0.2);
+      padding: 0 20px;
+      border-radius: 5px;
+}
+
+.size-select {
+    margin-top: 40px;
+}
+
+.size-select input, .color-select input {
+    display: none;
+}
+
+.size-select label, .color-select label {
+    margin: 10px 5px;
+
+}
+
+.size-select label span {
+    width: 30px;
+    height: 30px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.size-select input:checked + span {
+    color: #005198;
+    font-weight: 600;
+    box-shadow: 0 0 4px #fff, 0 0 6px #005198;
+
+}
+
+.color-select {
+    margin-top: 20px;
+}
+
+.color-select label span {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    padding:2px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.color-1 {
+    background-color: red;
+}
+
+
+.color-2 {
+    background-color: green;
+}
+
+
+.color-3 {
+    background-color:blue;
+}
+
+
+.color-4 {
+    background-color: pink;
+}
+
+.color-select input:checked + span {
+    box-shadow: 0 0 4px 2px #005198;
+}
+
+.quantity-select {
+    margin-top: 20px;
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+
+.quantity-select input {
+    width: 40px;
+    background: #eee;
+    outline: none;
+    border: none;
+    padding: 4px 4px 4px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+
+button {
+    margin-top: 50px;
+    width: 90%;
+    display: block;
+    padding: 8px 0;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background: rgb(13, 33, 73);
+    color: #fff;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 10px rgba(13, 33, 77, 0.3);
+    cursor: pointer;
+
+}
+
+.controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 10px;
+}
+
+.controls span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.btn.active {
+    background: #005198;
+}
+
+
+@media screen and (max-width:800px) {
+    .product {
+        flex-direction: column;
+        height: 400px;
+        width: 400px;
+    }
+
+}

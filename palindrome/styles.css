@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #DAD2D8;
+    background:linear-gradient(45deg, #2472FC,#0F8B8D);
+    position: relative;
+}
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+    color: #fff;
+}
+
+.pal-container {
+    
+    width: min(100vw, 500px);
+    padding: 40px;
+    background: #143642;
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pal-container label {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+    
+}
+
+.input-box input {
+    flex-basis: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #EC9A29;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.input-box button {
+    flex-basis: 25%;
+    padding: 10px;
+    border-radius: 2rem;
+    border: white;
+    font-size: 16px;
+    background: #0F8B8D;
+    color: white;
+    box-shadow: 0 4px 4px 1px rgb(255, 255, 255, 0.1);
+    outline: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.input-box button:hover, .input-box button:focus {
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px 1px rgb(255, 255, 255, 0.1);
+    
+}
+
+.show-result {
+    margin-top: 16px;
+    font-size: 22px;
+}
+
+.hidden {
+    display: none;
+}
+
+.definition-div  {
+    width: min(100vw, 500px);
+    margin-top: 10px;
+    padding: 20px 40px;
+    border-radius: 2rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F0EDEE;
+    background: #2E4057;
+}
+
+.definition-div .definition {
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.create {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: dashed;
+    font-style: oblique;
+    color: #fff;
+}
+
+@media screen and (max-width: 450px) {
+    .input-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .input-box input {
+        flex-basis: 100%;
+    }
+    .input-box button {
+        width: 40%;
+    }
+}

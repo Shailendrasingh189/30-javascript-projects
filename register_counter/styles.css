@@ -1,0 +1,194 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* all default style */
+ul {
+    margin: 5px 0;
+    list-style: none;
+}
+
+
+/* Body styling */
+body {
+    background-color: #351431;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+/* Change Due Display */
+#change-due {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Cash container */
+.cash-container {
+    width: 300px;
+    padding: 10px 16px;
+    background-color: #D1D3C4;
+    color: #0f0f0f;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Input container */
+.input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Input field */
+.user-input {
+    width: 60%;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+/* Purchase button */
+.purchase-btn-style {
+    padding: 4px 8px;
+    font-size: 17px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #351431;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+
+}
+
+.purchase-btn-style:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.purchase-btn-style:hover {
+    background: #feac32;
+    color: #0f0f0f;
+}
+
+/* Main container styling */
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0f0f0f;
+}
+
+/* Display screen */
+.display-screen {
+    background-color: #D1D3C4;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Price display */
+.price-screen {
+    width: 140px;
+    padding: 10px 20px;
+    background-color: #BDC696;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Top drawer styling */
+.top-drawer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D1D3C4;
+    padding: 20px;
+    width: 350px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+/* Change drawer list */
+.cash-drawer-display {
+    width: 60%;
+    padding: 10px;
+    background-color: #BDC696;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+/* Button container */
+.btns {
+    width: 30%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #775253;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* Individual buttons */
+.btn {
+    width: 24px;
+    height: 24px;
+    background-color: #351431;
+    color: #D1D3C4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+/* Bottom drawer styling */
+.bottom-drawer {
+    width: 350px;
+    height: 40px;
+    background-color: #D1D3C4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Drawer angle element */
+.draw-angle {
+    width: 100px;
+    height: 10px;
+    background-color: #0f0f0f;
+    border-radius: 4px;
+}

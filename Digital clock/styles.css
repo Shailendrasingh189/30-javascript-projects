@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-linear-gradient(45deg,rgb(20, 54, 66), #256969, #143642);
+    z-index: 1;
+    position: relative;
+}
+
+.hero {
+    width: 80%;
+    max-width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 54, 66, 0.11);
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    backdrop-filter: blur(40px);
+}
+
+
+.hero::before {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    content: "";
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #EC9A29;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.hero::after {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    content: "";
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    background: #a8211a;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.clock > div {
+    color: #fff;
+    position: relative;
+}
+
+.clock div span {
+    display: block;
+}
+
+.clock div span:first-child {
+    font-size: 100px;
+    margin-bottom: 5px;
+}
+
+.clock div span:last-child {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.clock div #minutes::before {
+    content: ":";
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    border-radius: 50%;
+    left: -55px;
+    top: -8px;
+}
+
+.clock div #minutes::after {
+    content: ":";
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    border-radius: 50%;
+    right: -55px;
+    top: -8px;
+}

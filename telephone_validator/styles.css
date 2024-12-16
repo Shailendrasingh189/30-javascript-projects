@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #474448;
+    color: #f1f0ea;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 16px 0;
+    width: 100%;
+    max-width: 450px;
+
+}
+
+.container {
+    width: 280px;
+    height: 460px;
+    position: relative;
+    background: #2d232e;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 30px auto;
+}
+
+.validator-box {
+    width: 90%;
+    border-radius: 8px;
+    flex-basis: 20%;
+    margin: 10px 0;
+}
+
+
+
+label {
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.user-input {
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.user-input:focus {
+    outline: 3px solid #534b52;
+
+}
+
+.btn {
+    width: 80px;
+    padding: 10px 10px;
+    margin: 10px auto;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #f1f0ea;
+    background: #534b52;
+    font-size: 16px;
+}
+
+.results-div {
+    width: 95%;
+    border-radius: 4px;
+    background: #f1f0ea;
+    flex-basis: 90%;
+    overflow-y: auto;
+}
+
+.results-content {
+    width: 97%;
+    padding: 4px;
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.footer-box {
+    width: 90%;
+    margin: 10px 0;
+    flex-basis: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}

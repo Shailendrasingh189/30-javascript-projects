@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #eae6e5;
+    --bg-color: #5b9279;
+    --dark-color: #12130f;
+    --button-bg: #8f8073;
+    --button-color: #eae6e5;
+}
+
+body {
+    background: #8FCB9B;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background: var(--bg-color);
+    color: var(--primary-color);
+    padding: 10px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 20px 0;
+}
+
+.input-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.convert-btn {
+    background: var(--dark-color);
+    color: var(--button-color);
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.input {
+    height: 32px;
+    border-radius: 8px;
+    padding: 10px 4px;
+    border: none;
+    font-size: 18px;
+}
+
+.result {
+    margin: 10px 0;
+    min-width: 200px;
+    width: fit-content;
+    min-height: 80px;
+    padding: 15px;
+    border: 1px solid var(--dark-color);
+    border-radius: 8px;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+

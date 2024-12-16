@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* eff1f3 002642*/
+body {
+    background: #08203e;
+    color: #eff1f3;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 40rem;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.container h1 span {
+    color: #019a5d;
+    border-bottom: 0.25rem solid #019a5d;
+    padding-bottom: 0.5rem;
+}
+
+.display {
+    color: #333;
+    background: #eff1f3;
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.25rem 1.25rem;
+    margin: 3rem 0 1rem;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+input {
+    width: 80%;
+    font-size: 1.5rem;
+    outline: none;
+    background: #eff1f3;
+    padding: 0 0.5rem;
+    border: none;
+}
+
+.display img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+
+button {
+    display: block;
+    margin: 3rem 0;
+    background-color: #019a5d;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    line-height: -15rem;
+}
+
+.container button img {
+    width: 1.75rem;
+    margin-right: 0.6rem;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: #019a5d;
+    color: #eff1f3;
+    font-size: 1.25rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.4rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+#copied {
+    position: absolute;
+    display: none;
+    background: #019a5d;
+    color: #eff1f3;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    top: 4.5rem;
+    right: 0;
+    z-index: 10;
+    transition: all 5ms ease-in;
+}
+
+#copied::before {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: 1.25rem;
+    top:-0.25rem;
+    transform: rotate(45deg);
+    border-radius: 1px;
+    background-color: #019a5d;
+    z-index: -4;
+}

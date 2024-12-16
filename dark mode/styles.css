@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    ;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+        --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: var(--secondary-color);
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: #ff4321;
+}
+
+.mode {
+    width: 30px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.content {
+    z-index: 10;
+
+}
+
+.content h1 {
+    font-size: 72px;
+}
+
+.container .content h1 span {
+    color: #ff4321;
+}
+
+.content p {
+    width: 90%;
+}
+
+.content a {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+.img-box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.img-box img {
+    width: 500px;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-10%);
+    transition: right 1s, bottom 1s;
+}
+
+.img-box:hover .girl {
+    right: -10%;
+}
+
+.img-box:hover .pattern {
+    bottom: 5%;
+}
+
+@media screen and (max-width:960px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .content {
+        padding-right: 100px;
+    }
+
+    .content h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .img-box img {
+        width: 350px;
+    }
+}

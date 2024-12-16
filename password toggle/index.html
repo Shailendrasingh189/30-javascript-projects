@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Toggle</title>
+</head>
+<body>
+    <div class="container">
+        <div class="password-box">
+            <input type="password" maxlength="10" placeholder="Password" id="password">
+            <img src="image/eye-close.png" onclick="show()" alt="hidden" id="eyeicon">
+        </div>
+    </div>
+    <script>
+        let password = document.getElementById("password");
+        let eyeIcon = document.getElementById("eyeicon");
+
+        const show = () => {
+            if(password.type == "password") {
+                password.type = "text";
+                eyeIcon.src = "image/eye-open.png";
+            }
+            else {
+                password.type = "password";
+                eyeIcon.src = "image/eye-close.png";
+            }
+        }
+    </script>
+</body>
+</html>

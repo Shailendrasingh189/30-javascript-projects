@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <div class="container">
+        <div id="left">
+            <div class="list" draggable="true"><img src="drag_drop_icon.png" alt="icon" class="icon">List item 1</div>
+            <div class="list" draggable="true"><img src="drag_drop_icon.png" alt="icon" class="icon">List item 2</div>
+            <div class="list" draggable="true"><img src="drag_drop_icon.png" alt="icon" class="icon">List item 3</div>
+            <div class="list" draggable="true"><img src="drag_drop_icon.png" alt="icon" class="icon">List item 4</div>
+            <div class="list" draggable="true" ondragstart="drag(event)"><img src="drag_drop_icon.png" alt="icon" class="icon">List item 5</div>
+        </div>
+        <div id="right"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
